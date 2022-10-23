@@ -1,0 +1,22 @@
+{
+  "name": "api-typegraphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "apollo-server": "^3.10.3",
+    "class-validator": "^0.13.2",
+    "graphql": "^15.8.0",
+    "type-graphql": "^1.1.1"
+  }
+}
