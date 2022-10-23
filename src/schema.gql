@@ -3,6 +3,28 @@
 # !!!   DO NOT MODIFY THIS FILE BY YOURSELF   !!!
 # -----------------------------------------------
 
+input CreateStudentInput {
+  medium: Float!
+  name: String!
+  register: String!
+  schoolId: String!
+}
+
+type Mutation {
+  createStudent(data: CreateStudentInput!): StudentModelDto!
+}
+
 type Query {
-  helloWorld: String!
+  listStudents: [StudentModelDto!]!
+}
+
+type SchoolModelDto {
+  name: String!
+}
+
+type StudentModelDto {
+  medium: Float!
+  name: String!
+  register: String!
+  school: SchoolModelDto!
 }
